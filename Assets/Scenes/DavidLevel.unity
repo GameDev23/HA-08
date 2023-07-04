@@ -5723,8 +5723,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481078594}
   m_LocalRotation: {x: -0.69639736, y: 0.0032960775, z: 0.0019763114, w: 0.7176461}
-  m_LocalPosition: {x: 0, y: 0, z: 4.1997895}
-  m_LocalScale: {x: 12, y: 1, z: 4.3}
+  m_LocalPosition: {x: 0, y: 0, z: 4}
+  m_LocalScale: {x: 9.735, y: 1, z: 4.3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1225879731}
@@ -5732,7 +5732,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -88.275, y: 3.768, z: -3.34}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.20008278, y: 1.0999498}
+  m_AnchoredPosition: {x: 0.2, y: 2.1}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!64 &481078596
@@ -13998,15 +13998,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165154388}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.0018446294, y: -0.030483048, z: -0.0016794351, w: 0.9995322}
+  m_LocalPosition: {x: 0.88581556, y: 0.037314594, z: 0.2957077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1225879731}
   m_Father: {fileID: 1159837094}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.205, y: -3.494, z: -0.199}
 --- !u!4 &1166239319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3818857231491917409, guid: 906cf415f2dcd7342b147125282ed6c1,
@@ -15095,7 +15095,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225879730}
   m_LocalRotation: {x: 0.6901353, y: 0.7030718, z: 0.13256457, w: 0.10876587}
-  m_LocalPosition: {x: 0, y: 0, z: 16.46}
+  m_LocalPosition: {x: 0, y: 0, z: 16.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15105,8 +15105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: -2.079, y: 160.358, z: 89.296}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.8, y: -3.02}
-  m_SizeDelta: {x: 127.5, y: 41.47}
+  m_AnchoredPosition: {x: -6.97, y: -0.23}
+  m_SizeDelta: {x: 90.75, y: 41.47}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1225879732
 MonoBehaviour:
@@ -15129,16 +15129,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Jenseits der Grenzen dieses Reiches, wo die Anforderungen ihren Tribut
-    forderten, trat eine eigenartige Herausforderung zutage. Ach, die auserw\xE4hlten
+    forderten, trat eine eigenartige Herausforderung zutage.\n\n Ach, die auserw\xE4hlten
     B\xE4ume, pr\xE4chtig in ihrer HD-Pracht, tanzten zu einer anderen Melodie, nicht
-    im Einklang mit unserer polyartigen Welt. Doch f\xFCrchte dich nicht, denn eine
-    zauberhafte L\xF6sung wurde geschmiedet. In einer verborgenen Ecke spross ein
-    Mini-Biom empor, beheimatete jene windfreundlichen B\xE4ume, ein Zufluchtsort
+    im Einklang mit unserer polyartigen Welt.\n\n Doch f\xFCrchte dich nicht, denn
+    eine zauberhafte L\xF6sung wurde geschmiedet.\n\n In einer verborgenen Ecke spross
+    ein Mini-Biom empor, beheimatete jene windfreundlichen B\xE4ume, ein Zufluchtsort
     aus einer anderen Dimension. Dort wiegen sie sich und fl\xFCstern Geschichten
-    aus fernen Reichen, eine entz\xFCckende \"Exkursion\", um den Anforderungen der
-    akademischen Suche gerecht zu werden. Und so wagten wir uns mit einer Prise interdimensionaler
-    Schelmerei voran, verschmolzen zwei Universen zu einer harmonischen Einheit.\n\n\n(Ich
-    hoffe das geht durch als Requirement 1b)  :D )"
+    aus fernen Reichen, ein entz\xFCckendes\n\n \"Entschuldigung Herr Vonk\"\n(Ich
+    hoffe das geht durch als Requirement 1b)  :D )\n\n, um den Anforderungen der
+    akademischen Anforderungen gerecht zu werden.\n\n Und so wagten wir uns voran,
+    verschmolzen zwei Universen zu einer harmonischen Einheit.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15165,8 +15165,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 17
+  m_fontSizeBase: 17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
