@@ -11,12 +11,11 @@ public class CrateCreater : MonoBehaviour
     public int currentIndex = 0;
     private GameObject Crate;
     private GameObject CompanionCube;
-
-    private LayerMask mask;
+    private bool companionWasCreated = false;
+    
     // Start is called before the first frame update
     void Start()
     {
-        mask = LayerMask.GetMask("Crate");
         pos.transform.position += transform.forward;
     }
 
@@ -35,6 +34,10 @@ public class CrateCreater : MonoBehaviour
             {
                 isHoldingCrate = false;
                 Crate.GetComponent<Rigidbody>().isKinematic = false;
+                if (Crate == CompanionCube)
+                {
+                    companionWasCreated = true;
+                }
             }
         }
 
@@ -59,7 +62,7 @@ public class CrateCreater : MonoBehaviour
             currentIndex = 4;
         }
 
-        if (isHoldingCrate && Crate != null)
+        if (isHoldingCrate && Crate != null && !companionWasCreated)
         {
             Vector3 center = transform.position;
             center.y = Crate.transform.position.y;
@@ -79,7 +82,10 @@ public class CrateCreater : MonoBehaviour
             Debug.Log("Found a crate here");
             GameObject crate = hit.collider.attachedRigidbody.gameObject;
             crate.transform.position = pos.transform.position;
-            isHoldingCrate = true;
+            if(Crate != CompanionCube)
+            {
+                isHoldingCrate = true;
+            }
             Crate = crate;
             
         }
@@ -98,6 +104,8 @@ public class CrateCreater : MonoBehaviour
                 CompanionCube = crate;
         }
 
+        if (CompanionCube != null && companionWasCreated)
+            return;
         Crate.GetComponent<Rigidbody>().isKinematic = true;
 
     }
