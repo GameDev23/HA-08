@@ -44,7 +44,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.098
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -160,7 +160,7 @@ Transform:
   - {fileID: 7495926781908636117}
   - {fileID: 8032229910437617307}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1500525494065121631
 MonoBehaviour:
@@ -176,6 +176,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SourceBGM: {fileID: 4460217394235765042}
   SourceSFX: {fileID: 3213716286497185212}
+  DavidCity: {fileID: 8300000, guid: 519bd2cbb11ee9648ad6785daf71735b, type: 3}
+  DavidDesert: {fileID: 8300000, guid: a51aba3884a9bc64d8943a71f8527c0b, type: 3}
 --- !u!1 &7948022305403893796
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,7 +222,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.098
   m_Pitch: 1
   Loop: 0
   Mute: 0

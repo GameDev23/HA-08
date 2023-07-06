@@ -9,6 +9,9 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource SourceBGM;
     public AudioSource SourceSFX;
+    public AudioClip DavidCity;
+    public AudioClip DavidDesert;
+    public AudioClip DavidCityArea;
     
     void Awake()
     {
