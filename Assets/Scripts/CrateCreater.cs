@@ -10,6 +10,7 @@ public class CrateCreater : MonoBehaviour
     private bool isHoldingCrate = false;
     public int currentIndex = 0;
     private GameObject Crate;
+    private GameObject CompanionCube;
 
     private LayerMask mask;
     // Start is called before the first frame update
@@ -62,7 +63,7 @@ public class CrateCreater : MonoBehaviour
         {
             Vector3 center = transform.position;
             center.y = Crate.transform.position.y;
-            Crate.transform.position = pos.transform.position + pos.transform.forward * 2;
+            Crate.transform.position = pos.transform.position + pos.transform.forward * 2.5f;
             Crate.transform.LookAt(center);
         }
     }
@@ -84,10 +85,17 @@ public class CrateCreater : MonoBehaviour
         }
         else
         {
-            GameObject crate = Instantiate(Crates[currentIndex]);
+            GameObject crate;
+            if (currentIndex == 3 && CompanionCube != null)
+                crate = CompanionCube;
+            else
+                crate = Instantiate(Crates[currentIndex]);
+            
             crate.transform.position = pos.transform.position;
             isHoldingCrate = true;
             Crate = crate;
+            if (CompanionCube == null && currentIndex == 3)
+                CompanionCube = crate;
         }
 
         Crate.GetComponent<Rigidbody>().isKinematic = true;

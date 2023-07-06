@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
+using RenderSettings = UnityEngine.RenderSettings;
 
 public class DayNight : MonoBehaviour
 {
@@ -18,8 +20,9 @@ public class DayNight : MonoBehaviour
     public float nightIntensity;
 
     public bool isDesert = false;
-
     public bool isNight = false;
+
+    private Quaternion originPos;
     
     
     void Awake()
@@ -36,7 +39,7 @@ public class DayNight : MonoBehaviour
     {
         
        // originColor = RenderSettings.skybox.color;
-        
+       originPos = light.transform.rotation;
 
     }
 
@@ -58,6 +61,7 @@ public class DayNight : MonoBehaviour
 
             }
 
+            light.transform.rotation = originPos;
             isNight = false;
             light.color = dayColor;
             light.intensity = dayIntensity;
@@ -78,6 +82,7 @@ public class DayNight : MonoBehaviour
                 
             }
 
+            light.gameObject.transform.LookAt(Vector3.up);
             isNight = true;
             light.color = nightColor;
             light.intensity = nightIntensity;
