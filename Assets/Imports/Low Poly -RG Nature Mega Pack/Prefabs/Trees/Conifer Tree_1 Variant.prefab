@@ -98,7 +98,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Conifer Tree_1 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: aa3dd0ecf68c82849abe894022028441, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

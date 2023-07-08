@@ -83,7 +83,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Plant_18 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: 7642fefa3f591a542acf8c76508b814c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

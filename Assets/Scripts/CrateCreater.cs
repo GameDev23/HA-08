@@ -62,7 +62,7 @@ public class CrateCreater : MonoBehaviour
             currentIndex = 4;
         }
 
-        if (isHoldingCrate && Crate != null && !companionWasCreated)
+        if (isHoldingCrate && Crate != null && !companionWasCreated ||(isHoldingCrate && Crate != null && companionWasCreated && Crate != CompanionCube))
         {
             Vector3 center = transform.position;
             center.y = Crate.transform.position.y;

@@ -88,7 +88,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom 6 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: 9cacd675232ac344281a2e1a3ab6a7cf, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

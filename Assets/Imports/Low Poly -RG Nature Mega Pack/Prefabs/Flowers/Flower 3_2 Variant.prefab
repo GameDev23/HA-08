@@ -93,7 +93,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flower 3_2 Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3451118302482216456, guid: eed55718002592b42b7bceca20beb0f6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

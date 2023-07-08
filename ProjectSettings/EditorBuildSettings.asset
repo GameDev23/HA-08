@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: be273aa34b1950d4c94f648473e7e97b
+  - enabled: 1
     path: Assets/Scenes/DavidLevel.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MarvinLevel.unity
+    guid: c71ce39920151274c952f06c5b6f85a4
+  - enabled: 1
+    path: Assets/Scenes/SamwelLevel.unity
+    guid: 00aeb791a06e9224888f05c5cf099c95
   m_configObjects: {}
