@@ -7,6 +7,9 @@ public class WeHaveToCook : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        AudioManager.Instance.SourceSFX.PlayOneShot(AudioManager.Instance.WeHaveToCook, 1f);
+        if (other.CompareTag("Player"))
+        {
+            AudioManager.Instance.SourceSFX.PlayOneShot(AudioManager.Instance.WeHaveToCook, 1f);
+        }
     }
 }
