@@ -104,7 +104,7 @@ public class CrateCreater : MonoBehaviour
                 CompanionCube = crate;
         }
 
-        if (isNew && companionWasCreated)
+        if (isNew && companionWasCreated && Crate == CompanionCube)
         {
             isHoldingCrate = false;
             return;
