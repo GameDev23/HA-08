@@ -62,7 +62,7 @@ public class CrateCreater : MonoBehaviour
             currentIndex = 4;
         }
 
-        if (isHoldingCrate && Crate != null && !companionWasCreated ||(isHoldingCrate && Crate != null && companionWasCreated && Crate != CompanionCube))
+        if (isHoldingCrate && Crate != null)
         {
             Vector3 center = transform.position;
             center.y = Crate.transform.position.y;
@@ -75,14 +75,13 @@ public class CrateCreater : MonoBehaviour
     {
         Ray ray = new Ray(pos.transform.position, pos.transform.forward);
         RaycastHit hit;
+        bool isNew = false;
         if (Physics.Raycast(ray, out hit, 3f) && hit.transform.CompareTag("Crate"))
         {
-
-            
             Debug.Log("Found a crate here");
             GameObject crate = hit.collider.attachedRigidbody.gameObject;
             crate.transform.position = pos.transform.position;
-            if(Crate != CompanionCube)
+            if(Crate != null)
             {
                 isHoldingCrate = true;
             }
@@ -92,6 +91,7 @@ public class CrateCreater : MonoBehaviour
         else
         {
             GameObject crate;
+            isNew = true;
             if (currentIndex == 3 && CompanionCube != null)
                 crate = CompanionCube;
             else
@@ -104,8 +104,11 @@ public class CrateCreater : MonoBehaviour
                 CompanionCube = crate;
         }
 
-        if (CompanionCube != null && companionWasCreated)
+        if (isNew && companionWasCreated)
+        {
+            isHoldingCrate = false;
             return;
+        }
         Crate.GetComponent<Rigidbody>().isKinematic = true;
 
     }
