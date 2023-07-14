@@ -14,6 +14,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip DavidCityArea;
     public AudioClip WeHaveToCook;
     public AudioClip SamwelBGM;
+    public AudioClip MarvinBGM;
+
     
     void Awake()
     {
