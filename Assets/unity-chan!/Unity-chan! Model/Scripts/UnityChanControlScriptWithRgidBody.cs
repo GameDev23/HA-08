@@ -180,6 +180,7 @@ namespace UnityChan
 
 		void OnGUI ()
 		{
+			return;
 			GUI.Box (new Rect (Screen.width - 260, 10, 250, 150), "Interaction");
 			GUI.Label (new Rect (Screen.width - 245, 30, 250, 30), "Up/Down Arrow : Go Forwald/Go Back");
 			GUI.Label (new Rect (Screen.width - 245, 50, 250, 30), "Left/Right Arrow : Turn Left/Turn Right");
