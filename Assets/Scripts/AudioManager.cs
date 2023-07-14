@@ -7,11 +7,14 @@ public class AudioManager : MonoBehaviour
     
     public static AudioManager Instance;
 
+
     public AudioSource SourceBGM;
     public AudioSource SourceSFX;
     public AudioClip DavidCity;
     public AudioClip DavidDesert;
     public AudioClip DavidCityArea;
+    public AudioClip MarvinBGM;
+
     
     void Awake()
     {

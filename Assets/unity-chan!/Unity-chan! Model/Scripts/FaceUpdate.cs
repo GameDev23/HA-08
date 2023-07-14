@@ -17,6 +17,7 @@ namespace UnityChan
 
 		void OnGUI ()
 		{
+			return;
 			GUILayout.Box ("Face Update", GUILayout.Width (170), GUILayout.Height (25 * (animations.Length + 2)));
 			Rect screenRect = new Rect (10, 25, 150, 25 * (animations.Length + 1));
 			GUILayout.BeginArea (screenRect);
