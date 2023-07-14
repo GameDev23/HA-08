@@ -9,7 +9,7 @@ public class WeHaveToCook : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            AudioManager.Instance.SourceSFX.PlayOneShot(AudioManager.Instance.WeHaveToCook, 1f);
+            AudioManager.Instance.SourceSFX.PlayOneShot(AudioManager.Instance.WeHaveToCook, 3f);
         }
     }
 }

@@ -8,7 +8,7 @@ public class Freedom : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            AudioManager.Instance.SourceSFX.PlayOneShot(AudioManager.Instance.Freedom, 2f);
+            AudioManager.Instance.SourceSFX.PlayOneShot(AudioManager.Instance.Freedom, 4f);
         }
     }
 }
