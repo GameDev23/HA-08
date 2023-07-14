@@ -13,6 +13,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip DavidDesert;
     public AudioClip DavidCityArea;
     public AudioClip WeHaveToCook;
+    public AudioClip NewSamwelville;
+    public AudioClip Freedom;
     public AudioClip SamwelBGM;
     public AudioClip MarvinBGM;
 
