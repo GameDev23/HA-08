@@ -1,26 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class  AreaMusic: MonoBehaviour
 {
-    public AudioClip musicClip;  // The audio clip to play when entering this area
-    private AudioSource audioSource;
+    [SerializeField] AudioClip musicClip;// The audio clip to play when entering this area
     private bool isPlayerInside;
+    private AudioManager audioManager;
+
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        audioSource.loop = true;
-        audioSource.clip = musicClip;
+
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInside = true;
-            PlayMusic();
+            AudioManager.Instance.SourceBGM.clip = musicClip;
+            AudioManager.Instance.SourceBGM.Play();
         }
     }
 
@@ -28,24 +28,8 @@ public class  AreaMusic: MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            isPlayerInside = false;
-            StopMusic();
-        }
-    }
-
-    void PlayMusic()
-    {
-        if (!audioSource.isPlaying)
-        {
-            audioSource.Play();
-        }
-    }
-
-    void StopMusic()
-    {
-        if (audioSource.isPlaying)
-        {
-            audioSource.Stop();
+            AudioManager.Instance.SourceBGM.clip = AudioManager.Instance.SamwelBGM;
+            AudioManager.Instance.SourceBGM.Play();
         }
     }
 }
